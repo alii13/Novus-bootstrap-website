@@ -1,0 +1,46 @@
+<svg  id="logo" viewBox="0 0 438 375" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style type="text/css">
+
+.sto{
+    stroke-dasharray:2000;
+    stroke-dashoffset:0;
+    -webkit-animation:dash 7s linear forwards;
+    -o-animation:dash 7s linear forwards;
+    -moz-animation:dash 7s linear forwards;
+    animation: dash 7s linear forwards;
+}
+#logo:hover .sto{
+    fill:#000;
+    transition: .4s;
+}
+#logo{
+    cursor:pointer;
+}
+@-webkit-keyframes dash{
+    from{
+        stroke-dashoffset:2000;
+    }
+    to{
+        stroke-dashoffset:0;
+        fill:#000;
+    }
+}
+
+</style>
+</defs>
+<g filter="url(#filter0_d)">
+<path class="sto" d="M74 363.5H75.5833L76.6286 362.311L150.5 278.282V336.5H127H125.318L124.267 337.814L108.267 357.814L103.718 363.5H111H198H201.5V360V149V139.423L195.325 146.743L17.3248 357.743L12.4683 363.5H20H74ZM223.406 110.651L222.5 111.651V113V360V363.5H226H412H422.605L414.083 357.188L387.083 337.188L386.155 336.5H385H277.5V60V50.9215L271.406 57.6505L223.406 110.651ZM306.213 7.71702L301.5 5.97516V11V78V86.9738L307.576 80.3697L353.576 30.3697L357.111 26.527L352.213 24.717L306.213 7.71702ZM302.336 117.73L301.5 118.711V120V313V316.5H305H351H354.5V313V66V56.494L348.336 63.7304L302.336 117.73Z" stroke="black" stroke-width="7"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0.936646" y="0.950317" width="436.274" height="374.05" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

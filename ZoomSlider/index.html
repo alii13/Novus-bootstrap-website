@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projects- Novus</title>
+	<meta name="description" content="A simple content slider with depth-like zoom functionality" />
+	<meta name="keywords" content="blueprint, template, slider, zoom, javascript, depth, 3d, css" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="#">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato|Montserrat&display=swap" rel="stylesheet">
+	
+	<!-- Feather Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<!-- General demo styles & header -->
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!-- Component styles -->
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Main container -->
+	<div class="container">
+		<!-- Blueprint header -->
+		<header class="bp-header cf">
+			<span>Novus.Org <span class="bp-icon bp-icon-about" data-content="Novus company projects gallery"></span></span>
+			<h1>Projects</h1>
+			<nav>
+				<a href="../index.html" class="bp-icon bp-icon-prev" data-info="Home"><span>Home</span></a>
+				<!--a href="" class="bp-icon bp-icon-next" data-info="next Blueprint"><span>Next Blueprint</span></a-->
+				<a href="#" class="bp-icon bp-icon-drop" data-info="back to the Codrops article"><span>back to the Codrops article</span></a>
+				<a href="#" class="bp-icon bp-icon-archive" data-info="Blueprints archive"><span>Go to the archive</span></a>
+			</nav>
+		</header>
+		<!-- Grid -->
+		<section class="slider">
+			<div class="slide slide--current" data-content="content-1">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/iphone.png" alt="iPhone" />
+						<div class="preview">
+							<img src="images/iphone-content-preview.png" alt="iPhone app preview" />
+							<div class="zoomer__area zoomer__area--size-2"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>The Classic</span> Responsive website</h2>
+			</div>
+			<div class="slide" data-content="content-2">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/ipad.png" alt="iPad Mini" />
+						<div class="preview">
+							<img src="images/ipad-content-preview.png" alt="iPad Mini app preview" />
+							<div class="zoomer__area zoomer__area--size-4"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>Tablet</span> Friendly websites</h2>
+			</div>
+			<div class="slide" data-content="content-3">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/macbook.png" alt="MacBook" />
+						<div class="preview">
+							<img src="images/macbook-content-preview.jpg" alt="MacBook app preview" />
+							<div class="zoomer__area zoomer__area--size-3"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>The Amazing</span> Space</h2>
+			</div>
+			<div class="slide" data-content="content-4">
+				<div class="slide__mover">
+					<div class="zoomer flex-center">
+						<img class="zoomer__image" src="images/imac.png" alt="iMac" />
+						<div class="preview">
+							<img src="images/imac-content-preview.jpg" alt="iMac app preview" />
+							<div class="zoomer__area zoomer__area--size-5"></div>
+						</div>
+					</div>
+				</div>
+				<h2 class="slide__title"><span>The Classic</span> Design touch</h2>
+			</div>
+			
+			<nav class="slider__nav">
+				<button class="button button--nav-prev"><i class="icon icon--arrow-left"></i><span class="text-hidden">Previous product</span></button>
+				<button class="button button--zoom"><i class="icon icon--zoom"></i><span class="text-hidden">View details</span></button>
+				<button class="button button--nav-next"><i class="icon icon--arrow-right"></i><span class="text-hidden">Next product</span></button>
+			</nav>
+		</section>
+		<!-- /slider-->
+		<section class="content">
+			<div class="content__item" id="content-1">
+				<img class="content__item-img rounded-right" src="images/iphone-content.png" alt="Apple Watch Content" />
+				<div class="content__item-inner">
+					<h2 class="write">The Responsive website</h2>
+					<h3 class="write">Incredible performance for powerful apps</h3>
+					<p>Lorem ipsum dolor sit amet magnam amet asperiores inventore doloribus in, harum eligendi a commodi ea corporis dignissimos et minima est eveniet labore numquam nisi incidunt. Voluptas, nam! Blanditiis, quasi qui velit quam mollitia id veniam excepturi doloremque. Commodi dolor animi dolore nostrum assumenda iure numquam consequuntur maiores libero autem pariatur quam est fuga officiis et hic impedit praesentium non obcaecati, ullam aspernatur? Natus ad laudantium incidunt voluptates distinctio debitis corporis quod minima magni.</p>
+					<p><a href="#" >Learn more about this technology &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-2">
+				<img class="content__item-img rounded-right" src="images/ipad-content.jpg" alt="iPad Mini Content" />
+				<div class="content__item-inner">
+					<h2 class="write">Tablet</h2>
+					<h3 class="write">A perfect website for tablet view</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit dignissimos molestias, unde, laboriosam culpa reiciendis ab quod libero possimus, quae facilis esse assumenda. Doloribus, eius. Distinctio earum expedita repudiandae dolorum incidunt ut deserunt pariatur provident dolor quisquam obcaecati repellat aliquam voluptatem, quod perferendis, similique delectus culpa deleniti non excepturi placeat adipisci sint. Quam quis cupiditate voluptatum iusto quidem vel velit totam voluptas officia dignissimos. Molestiae sit, ratione ducimus excepturi illo perspiciatis impedit? Sapiente consequuntur nesciunt, suscipit mollitia nemo odit ab veniam deleniti at sunt recusandae quisquam dolores dolorum tenetur provident! Officiis eveniet fugiat tempore? Aut, aliquid laborum! Temporibus, eveniet.</p>
+					<p><a href="#">Learn more about Performance &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-3">
+				<img class="content__item-img rounded-right" src="images/macbook-content.jpg" alt="MacBook Content" />
+				<div class="content__item-inner">
+					<h2 class="write">The Amazing Space</h2>
+					<h3 class="write">It's the future of the websites</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. dicta quae unde dolor excepturi, similique, exercitationem temporibus repudiandae tenetur. Placeat voluptatem atque voluptate impedit eos delectus maxime dolor harum voluptatum nobis, alias, distinctio expedita deleniti? Odio laborum tempora numquam dolor laboriosam asperiores praesentium? Nulla magnam porro nobis eum et fugit eos nesciunt repudiandae neque, provident quisquam in ducimus? Ipsam accusamus explicabo, modi natus commodi, quas sed doloribus repellat sint ad iste neque hic aperiam fuga eius ab, quidem eaque quam eveniet a reprehenderit magnam? Voluptates reprehenderit eius porro quis! Expedita, officiis.</p>
+					<p><a href="#">Learn more about the design &xrarr;</a></p>
+				</div>
+			</div>
+			<div class="content__item" id="content-4">
+				<img class="content__item-img rounded-right" src="images/imac-content.jpg" alt="iMac Content" />
+				<div class="content__item-inner">
+					<h2 class="write">The Classic</h2>
+					<h3 class="write">Engineered to the very last detail</h3>
+					<p>Lorem ipsum dolor, Vero sint, laudantium iste temporibus consectetur enim cupiditate fugit. Obcaecati optio natus ipsa quod blanditiis at. Voluptatem accusantium sit quod tempore, ullam ipsum enim ea eius sint nesciunt magnam hic et eaque quos delectus consequuntur fugit ipsa? Aut, iure? Quia repellendus aperiam ducimus, illo, id, vitae deserunt error eum modi autem nihil. Nam nesciunt vero nihil nulla accusantium cupiditate sint, corrupti illum laboriosam alias, ipsum tempore debitis itaque quae? Voluptatum neque, inventore pariatur et eveniet animi quis doloribus totam aperiam quisquam fugit corrupti libero accusantium praesentium.</p>
+					<p><a href="#">Learn more about the iMac's features &xrarr;</a></p>
+				</div>
+			</div>
+			
+			<button class="button button--close"><i class="icon icon--circle-cross"></i><span class="text-hidden">Close content</span></button>
+		</section>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

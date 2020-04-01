@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Daily Quotes | Novus</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato|Montserrat&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amarante|Lobster&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/2ded68fa50.js" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function() {
+        var elements=document.getElementById('flipp');
+        var authorElement=document.getElementById('authorr');
+        var resetAnimation=function(){
+          elements.classList.remove('flip');
+          authorElement.classList.remove('flip');
+         
+        };
+        var url = "https://api.quotable.io/random";
+         var str="";
+         var character="";
+
+         window.onload=myFunction;
+         
+         function myFunction(){
+          var randomColor = Math.floor(Math.random()*16777215).toString(16);
+          randomColor="#"+randomColor;
+          $.get(url, function(result) {
+         
+            str=result.content;
+            character="~ "+result.author;
+        
+            
+            
+            $(".textt").text(str);
+            $(".authortext").text(character);
+            $(".col-md-12").css("background-color",randomColor);
+            $(".colorr").css("background-color",randomColor);
+            $(".authortext").css("color",randomColor);
+            $(".col-md-12").css("transition","1.2s");
+            elements.classList.add('flip');
+            authorElement.classList.add('flip');
+            setTimeout(resetAnimation,1000);
+
+          });
+         }
+          
+        $(".btn1").click(function() {
+          var randomColor = Math.floor(Math.random()*16777215).toString(16);
+          randomColor="#"+randomColor;
+          $.get(url, function(result) {
+         
+            str=result.content;
+            character="~ "+result.author;
+        
+            
+            
+            $(".textt").text(str);
+            $(".authortext").text(character);
+            $(".col-md-12").css("background-color",randomColor);
+            $(".colorr").css("background-color",randomColor);
+            $(".authortext").css("color",randomColor);
+            $(".col-md-12").css("transition","1.2s");
+            elements.classList.add('flip');
+            authorElement.classList.add('flip');
+            setTimeout(resetAnimation,1000);
+
+          });
+          $(".tw").click(function(){
+            window.location = "https://twitter.com/intent/tweet?text="+str;
+
+          });
+          
+        });
+      });
+    </script>
+    <script>
+    setTimeout(function(){
+ document.getElementById('container-fluid').classList.remove('hide');
+ $("header").remove();
+
+}, 4000);</script>
+
+    <style>
+
+      
+      .col-md-12{
+        background-color: rgb(110, 59, 60);
+        
+      }
+      .colorr{
+        background-color: rgb(110, 59, 60);
+
+      }
+      .container-fluid{
+        min-height: 48vmax;
+      }
+      .child{
+        min-height:16em;
+        min-width: 40em;
+        max-width: 47em;
+        padding: 20px;
+      }
+      .quotes{
+        height:12em;
+        border-radius: 5px;
+        
+      }
+      .child{
+        box-shadow: 5px 5px 5px  rgba(60, 60, 60, 0.5);
+        border-radius: 5px;
+        position: relative;
+      }
+      .footerr{
+        display: flex;
+        justify-content: space-between;
+      }
+      .wrap{
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      
+      .quotes{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+      }
+      p{
+        color: white;
+      }
+      .bttnn{
+        display: flex;
+        justify-content: right;
+      }
+      .author{
+        display: flex;
+
+      }
+      .temp{
+        font-family: 'Lobster', cursive;
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .author{
+        display: flex;
+        justify-content: center;
+        font-weight: 800;
+        font-family: 'Amarante', cursive;
+      }
+      .authortext{
+        color: rgb(110, 59, 60);
+      }
+      embed{
+        height:10em;
+        width: 10em;
+      }
+      .flip{
+        transform: rotateX(360deg);
+        transition: transform .6s;
+      }
+      .textt{
+        quotes: "“" "”";
+      }
+      #loader{
+        display: block !important;
+      }
+      
+      @media (max-width: 425px) {
+       .child{
+         min-width: 18em;
+         min-height:24em;
+       }
+       .container-fluid{
+         min-height: 45em;
+       }
+       .share{
+         margin-top: 5em;
+         
+       }
+       .authortext{
+         margin-top: 1em;
+       }
+    
+      }
+      
+
+
+
+   q::before {
+      
+      content: open-quote;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ccdd00;
+      
+    }
+    
+    q::after {
+      content: close-quote;
+     
+    }
+
+     
+    </style>
+  </head>
+  <body >
+
+    <div class="container-fluid d-flex p-0 hhp" id="container-fluid">
+      
+     
+        <div class="col-md-12  d-flex align-items-center justify-content-center">
+            <div class="child bg-white">
+              <div class="child1">
+                <div class="quotes  text-center  bg-white" style="height: 140px;">
+                
+                  <span class="text-center  temp text-dark" id="flipp"><q class="textt">Daily Quotes</q></span>
+                 
+                  </div>
+                  <div class="author">
+                    <p class="authortext" id="authorr">~Powered by Novus</p>
+                </div>
+                  <div class="footerr">
+                    <div class="share col-md-11">
+                      <div class="wrap">
+                         <span><button class="btn colorr tw "><p class="p-0 m-0"><i class="fab fa-twitter"></i></p></button>
+                        <a href="../index.html"><button class="btn colorr "><p class="p-0 m-0"><i class="fas fa-home"></i></p></button></a></span>
+                        
+                        <button class="btn colorr btn1"><p class="p-0 m-0">New Quote<i class="fa fa-paper-plane"></i></p></button>
+                     
+                      </div>
+                    </div>
+                
+                  </div>
+                 
+
+              </div>
+               
+              </div>
+        
+       
+
+        </div>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
