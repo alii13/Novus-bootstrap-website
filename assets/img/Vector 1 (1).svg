@@ -1,0 +1,45 @@
+<svg width="679" height="777" viewBox="0 0 679 777" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style type="text/css">
+
+.sto{
+    stroke-dasharray:2000;
+    stroke-dashoffset:0;
+    -webkit-animation:dash 2s linear forwards;
+    -o-animation:dash 5s linear forwards;
+    -moz-animation:dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+}
+#logo:hover .sto{
+    transition: .4s;
+}
+#logo{
+    cursor:pointer;
+}
+@-webkit-keyframes dash{
+    from{
+        stroke-dashoffset:2000;
+    }
+    to{
+        stroke-dashoffset:0;
+        
+    }
+}
+
+</style>
+</defs>
+<g filter="url(#filter0_d)">
+<path class="sto" d="M24 146L339 22L650 162M24 146L334 301M24 146V531L334 398M650 162L334 301M650 162L654 572L334 736V398M334 301V398" stroke="black" stroke-width="40"/>
+</g>
+<defs>
+<filter id="filter0_d" x="0" y="0.30127" width="678.12" height="776.422" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
